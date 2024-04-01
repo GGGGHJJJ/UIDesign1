@@ -5,11 +5,17 @@
 }
 
 /* adjusting fonts */
+.custom-background {
+	background-color: lightskyblue;
+}
 
 body {
+	color: whitesmoke;
+    Font-family: arial;
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
 }
+
 
 p, li {
 	font-size:  22px;
@@ -24,6 +30,21 @@ p, li {
 
 h1, p {
 	margin-bottom:  20px;
+}
+
+pre {
+	color: yellow;
+}
+
+.desc {
+	color: yellow;
+	font-family: cursive;
+}
+
+.cursive {
+    font-family: arial;
+    color: hotpink;
+    font-weight: bold;
 }
 
 ul, ol {
