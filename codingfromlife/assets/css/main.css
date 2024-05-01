@@ -1,0 +1,504 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: white;
+	position: relative;
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid ivory;
+	position: absolute;
+	top: 203px;
+	left: 60px;
+}
+
+#square {
+	width: 900px;
+	height: 50px;
+	background: burlywood;
+	top: 403px;
+	left: 0px;
+	position: absolute;
+	z-index: 2;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_paper {
+	width: 550px;
+	height: 10px;
+	background: ivory;
+	top: 403px;
+	left: 180px;
+	position: absolute;
+	z-index: 3;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#circle_left {
+	width: 70px;
+	height: 70px;
+	background: red;
+	border-radius: 150px;
+	top: 343px;
+	left: 200px;
+	position: absolute;
+	z-index: 2;
+}
+
+#circle_right {
+	width: 70px;
+	height: 70px;
+	background: red;
+	border-radius: 150px;
+	top: 343px;
+	left: 285px;
+	position: absolute;
+	z-index: 2;
+}
+
+#circle_up_left {
+	width: 50px;
+	height: 50px;
+	background: lightpink;
+	border-radius: 150px;
+	top: 313px;
+	left: 180px;
+	position: absolute;
+	z-index: 1;
+}
+
+#circle_up_right {
+	width: 50px;
+	height: 50px;
+	background: lightpink;
+	border-radius: 150px;
+	top: 313px;
+	left: 320px;
+	position: absolute;
+	z-index: 1;
+}
+
+#circle_eye_left {
+	width: 20px;
+	height: 50px;
+	background: darkblue;
+	border-radius: 150px;
+	top: 283px;
+	left: 240px;
+	position: absolute;
+	z-index: 2;
+}
+
+#circle_eye_right {
+	width: 20px;
+	height: 50px;
+	background: darkblue;
+	border-radius: 150px;
+	top: 283px;
+	left: 285px;
+	position: absolute;
+	z-index: 2;
+}
+
+#circle_eye_left_up {
+	width: 16px;
+	height: 40px;
+	background: black;
+	border-radius: 150px;
+	top: 283px;
+	left: 242px;
+	position: absolute;
+	z-index: 3;
+}
+
+#circle_eye_right_up {
+	width: 16px;
+	height: 40px;
+	background: black;
+	border-radius: 150px;
+	top: 283px;
+	left: 287px;
+	position: absolute;
+	z-index: 3;
+}
+
+#circle_eye_left_white {
+	width: 10px;
+	height: 15px;
+	background: white;
+	border-radius: 150px;
+	top: 285px;
+	left: 244px;
+	position: absolute;
+	z-index: 4;
+}
+
+#circle_eye_right_white {
+	width: 10px;
+	height: 15px;
+	background: white;
+	border-radius: 150px;
+	top: 285px;
+	left: 289px;
+	position: absolute;
+	z-index: 4;
+}
+
+#circle {
+	width: 150px;
+	height: 150px;
+	background: lightpink;
+	border-radius: 150px;
+	top: 243px;
+	left: 200px;
+	position: absolute;
+	z-index: 1;
+}
+
+#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+#square_back {
+	width: 900px;
+	height: 20px;
+	background: gray;
+	top: 453px;
+	left: 0px;
+	position: absolute;
+	z-index: 1;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_left {
+	width: 20px;
+	height: 130px;
+	background: gray;
+	top: 453px;
+	left: 0px;
+	position: absolute;
+	z-index: 1;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_right {
+	width: 20px;
+	height: 130px;
+	background: gray;
+	top: 453px;
+	left: 880px;
+	position: absolute;
+	z-index: 1;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_book {
+	width: 350px;
+	height: 20px;
+	background: lightgray;
+	top: 390px;
+	left: 360px;
+	position: absolute;
+	z-index: 2;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_b {
+	width: 150px;
+	height: 20px;
+	background: ivory;
+	top: 300px;
+	left: 550px;
+	position: absolute;
+	z-index: 1;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_bb {
+	width: 150px;
+	height: 18px;
+	background: palevioletred;
+	top: 318px;
+	left: 550px;
+	position: absolute;
+	z-index: 2;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_bbb {
+	width: 150px;
+	height: 10px;
+	background: ivory;
+	top: 333px;
+	left: 550px;
+	position: absolute;
+	z-index: 3;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_bbb_left {
+	width: 18px;
+	height: 5px;
+	background: mediumvioletred;
+	top: 333px;
+	left: 600px;
+	position: absolute;
+	z-index: 4;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_bbb_right {
+	width: 18px;
+	height: 5px;
+	background: mediumvioletred;
+	top: 333px;
+	left: 650px;
+	position: absolute;
+	z-index: 5;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_bbbb {
+	width: 150px;
+	height: 18px;
+	background: palevioletred;
+	top: 343px;
+	left: 550px;
+	position: absolute;
+	z-index: 6;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_bbbbb {
+	width: 150px;
+	height: 10px;
+	background: ivory;
+	top: 361px;
+	left: 550px;
+	position: absolute;
+	z-index: 7;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_bbbbb_left {
+	width: 18px;
+	height: 5px;
+	background: mediumvioletred;
+	top: 361px;
+	left: 600px;
+	position: absolute;
+	z-index: 8;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_bbbbb_right {
+	width: 18px;
+	height: 5px;
+	background: mediumvioletred;
+	top: 361px;
+	left: 650px;
+	position: absolute;
+	z-index: 9;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_bbbbbb {
+	width: 150px;
+	height: 19px;
+	background: palevioletred;
+	top: 371px;
+	left: 550px;
+	position: absolute;
+	z-index: 10;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_v {
+	width: 18px;
+	height: 90px;
+	background: ivory;
+	top: 300px;
+	left: 550px;
+	position: absolute;
+	z-index: 11;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_cake_top {
+	width: 30px;
+	height: 10px;
+	background: rosybrown;
+	top: 290px;
+	left: 580px;
+	position: absolute;
+	z-index: 12;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_background {
+	width: 900px;
+	height: 556px;
+	background: black;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	z-index: 0;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#square_flower {
+	width: 100px;
+	height: 5px;
+	background: forestgreen;
+	top: 385px;
+	left: 395px;
+	position: absolute;
+	z-index: 3;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#circle_left_flower {
+	width: 15px;
+	height: 15px;
+	background: red;
+	border-radius: 150px;
+	top: 375px;
+	left: 485px;
+	position: absolute;
+	z-index: 3;
+}
+
+#circle_left_flower_b {
+	width: 15px;
+	height: 15px;
+	background: red;
+	border-radius: 150px;
+	top: 385px;
+	left: 490px;
+	position: absolute;
+	z-index: 3;
+}
+
+#circle_left_flower_bb {
+	width: 15px;
+	height: 15px;
+	background: red;
+	border-radius: 150px;
+	top: 375px;
+	left: 498px;
+	position: absolute;
+	z-index: 3;
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
