@@ -1,0 +1,120 @@
+* {
+box-sizing: border-box;
+}
+body {
+font-size: 14px;
+}
+.background {
+width: 100%;
+height: 1117px;
+background: rgba(0,228,255,1);
+opacity: 1;
+position: relative;
+top: 0px;
+left: 0px;
+overflow: hidden;
+}
+.title_name {
+	-webkit-text-stroke: 2px black;
+width: 100%;
+color: rgba(255,255,255,1);
+position: absolute;
+top: 93px;
+left: 321px;
+font-family: JejuGothic;
+font-weight: bold;
+font-size: 96px;
+opacity: 1;
+text-align: left;
+}
+.red_frame {
+width: 272px;
+height: 274px;
+background: rgba(255,3,52,1);
+opacity: 1;
+position: absolute;
+top: 265px;
+left: 190px;
+border: 5px solid rgba(0,0,0,1);
+border-top-left-radius: 40px;
+border-top-right-radius: 40px;
+border-bottom-left-radius: 40px;
+border-bottom-right-radius: 40px;
+overflow: hidden;
+}
+.yellow_machine {
+width: 1300px;
+height: 441px;
+background: rgba(255,255,19,1);
+opacity: 1;
+position: absolute;
+top: 352px;
+left: 190px;
+border: 10px solid rgba(0,0,0,1);
+border-top-left-radius: 40px;
+border-top-right-radius: 40px;
+border-bottom-left-radius: 40px;
+border-bottom-right-radius: 40px;
+overflow: hidden;
+}
+.white_machine {
+width: 1110px;
+height: 300px;
+background: rgba(255,255,255,1);
+opacity: 1;
+position: absolute;
+top: 419px;
+left: 274px;
+border: 5px solid rgba(0,0,0,1);
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+overflow: hidden;
+}
+.page_name {
+	-webkit-text-stroke: 2px black;
+width: 101px;
+color: rgba(255,255,255,1);
+position: absolute;
+top: 298px;
+left: 275px;
+font-family: JejuGothic;
+font-weight: bold;
+font-size: 36px;
+opacity: 1;
+text-align: left;
+}
+ 
+
+
+/* Add this to your main.css */
+#results {
+  margin: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#results li {
+  margin: 10px 0;
+}
+
+#results button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#results button:hover {
+  background-color: #45a049;
+}

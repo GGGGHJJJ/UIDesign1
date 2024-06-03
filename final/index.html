@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=JejuGothic&display=swap" rel="stylesheet" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+<title>Document</title>
+</head>
+<body>
+    <div class="background"><div class="yellow_machine"></div>
+    <div class="yellow_machine_plus"></div>
+    <div class="gray_machine"></div>
+    <div class="slot-container">
+     <div class="left_slot"></div>
+     <button id="ball_westernfood" class="ball_westernfood">Western Food</button>
+     <button id="ball_koreanfood" class="ball_koreanfood">Korean Food</button>
+     <div class="center_slot"></div>
+     <button id="ball_atmosphere" class="ball_atmosphere">Atmosphere</button>
+     <button id="ball_drinking" class="ball_drinking">Drinking</button>
+     <div class="right_slot"></div>
+     <button id="ball_10000" class="ball_10000">10000￦ ↓</button>
+     <button id="ball_15000" class="ball_15000">15000￦ ↑</button>
+
+    </div>
+    <video id="slot" class="slot" width="320" height="240" autoplay>
+            <source src="slot.mp4" type="video/mp4">
+        </video>
+    <div class="left_name"></div>
+    <div class="center_name"></div>
+    <div class="right_name"></div>
+    <span class="name_left">Food Menu</span>
+    <span class="name_center">Evaluation</span>
+    <span class="name_right">Price</span>
+    <div class="handle_machine"></div>
+    <img src="lever.png" id="lever" alt="Lever" class="lever">
+    
+    <span class="title_name">Restaurant Slot Machine</span>
+
+    <button id="searchButton" class="search-button" style="display: none;">Go</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -9,7 +9,9 @@
 	background-color: lightskyblue;
 }
 
+
 body {
+	
 	color: whitesmoke;
     Font-family: arial;
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
@@ -31,6 +33,7 @@ p, li {
 h1, p {
 	margin-bottom:  20px;
 }
+
 
 pre {
 	color: yellow;
@@ -54,6 +57,29 @@ ul, ol {
 img {
 	max-width: 100%;
 	height:  auto;
+}
+
+.darkmode {
+    position: absolute;
+    top: 27px;
+    left: 270px;
+    padding: 4px 8px;
+    font-size: 22px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0px 0px 0px #000;
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+/*	DARK MODE STYLES GO HERE */
+
+body.darkmode {
+	background: darkblue;
+	
+
+body.darkmode {
+	color: white;
 }
 
 /* uncomment the code below to set the grid */
