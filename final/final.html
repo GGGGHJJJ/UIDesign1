@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=JejuGothic&display=swap" rel="stylesheet" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<title>Document</title>
+</head>
+<body>
+    <div class="background">
+    <div class="yellow_machine"></div>
+    <div class="yellow_machine_plus"></div>
+    <div class="divide_yellow_holl"></div>
+    <div class="gray_machine"></div>
+    <div class="slot-container">
+     <div class="left_slot"></div>
+     <button id="ball_westernfood" class="ball_westernfood">Western Food</button>
+     <button id="ball_koreanfood" class="ball_koreanfood">Korean Food</button>
+     <div class="center_slot"></div>
+     <button id="ball_atmosphere" class="ball_atmosphere">Atmosphere</button>
+     <button id="ball_drinking" class="ball_drinking">Drinking</button>
+     <div class="right_slot"></div>
+     <button id="ball_10000" class="ball_10000">10000￦ ↓</button>
+     <button id="ball_15000" class="ball_15000">15000￦ ↑</button>
+
+    </div>
+    <video id="slot" class="slot" width="320" height="240" autoplay>
+            <source src="slot.mp4" type="video/mp4">
+        </video>
+    <div class="left_name"></div>
+    <div class="center_name"></div>
+    <div class="right_name"></div>
+    <span class="name_left">Food Menu</span>
+    <span class="name_center">Evaluation</span>
+    <span class="name_right">Price</span>
+    <div class="handle_machine"></div>
+    <img src="lever.png" id="lever" alt="Lever" class="lever">
+    
+    <span class="title_name">SNU Restaurant Slot Machine</span>
+
+    <button id="searchButton" class="search-button" style="display: none;">Go</button>
+
+    <div class="result-item western-food-atmosphere-10000" style="display: none;">
+        <div class="white_machine"></div>
+        <span class="result">Pa & Pi PASTA HOUSE</span>
+        <span class="info_location">▷ 1st floor, 18 Nambusunhwan-ro 234-gil, Gwanak-gu, Seoul</span>
+        <span class="info_time">▷ Everyday 11:00 - 21:00 | 20:30 last order</span>
+        <span class="info_number">▷ 0507-1495-5518</span>
+        <div class="line_1"></div>
+        <span class="menu">Representative Menu</span>
+        <button class="location-button" onclick="window.location.href='https://naver.me/52TmbnI2'">Location</button>
+        <span class="menu_1">▷ Pa & Pi Red </span>
+        <span class="menu_2">▷ Pa & Pi White </span>
+        <span class="menu_3">▷ Hot Spicy Carbonara  </span>
+        <span class="menu_4">▷ Meat Lover Pasta  </span>
+        <div class="line_2"></div>
+        <span class="review">Recommended Menu & Review</span>
+        <span class="review_content">Although this restaurant is famous for its pizza, the pasta is really cheap and delicious. The reason I chose this restaurant was because it was a place where you can eat high-quality pasta for under 10,000 won, so I would like to recommend the famous pasta instead of pizza. If you like slightly spicy and greasy pasta, I recommend the Hot Spicy Carbonara. This menu has a creamy feel with a special spicy sauce, and is currently the most popular menu item at this restaurant. Everyone who ate this menu commented that the sauce was moderately spicy, delicious, and not greasy. If you are someone who likes pasta with a harmonious combination of meat and tomatoes, I recommend the Meat Lover Pasta. This pasta is a tomato meat pasta made with plenty of ground pork and beef and finished with mozza cheddar cheese. It is full of cheese, has a good flavor, and is selected as one of the restaurant's signature menu items. This restaurant is loved by many people not only because of its delicious food and cheap prices, but also because of its good atmosphere.The interior, which exudes a Western atmosphere, and the neatly organized interior of the restaurant are elements loved by many people. I recommend this restaurant to those who want to have a meal in a nice atmosphere with friends and lovers, and to those who want to enjoy delicious cheap pasta.</span>
+    </div>
+    <div class="result-item western-food-atmosphere-15000" style="display: none;">
+        <div class="white_machine"></div>
+        <span class="result">VACANCY</span>
+        <span class="info_location">▷ B1, 5 Bongcheon-ro 62-gil, Gwanak-gu, Seoul</span>
+        <span class="info_time">▷ Everyday 17:00 - 24:00 | 23:00 last order | Closed on the second Monday and fourth Sunday of every month</span>
+        <span class="info_number">▷ 0507-1428-6958</span>
+        <div class="line_1"></div>
+        <span class="menu">Representative Menu</span>
+        <button class="location-button" onclick="window.location.href='https://naver.me/GqBsH38F'">Location</button>
+        <span class="menu_1">▷ Melanzane </span>
+        <span class="menu_2">▷ Grilled Anchovies </span>
+        <span class="menu_3">▷ Gambas Al Ajillo  </span>
+        <span class="menu_4">▷ Shrimp Rosé  </span>
+        <div class="line_2"></div>
+        <span class="review">Recommended Menu & Review</span>
+        <span class="review_content">This is a restaurant that can boast of having a better atmosphere than any other restaurant. The relatively dark interior is decorated in a vintage style, and beds are placed in the waiting area so that people can wait comfortably. The restaurant has wide space between tables, making it great for personal chats, and the space between them is decorated with vintage items. All of the menu items at this restaurant are rich in flavor and delicious, but the one I would most recommend is the shrimp rosé. Shrimp Rosé is a menu that goes well with the savory taste of plump shrimp and soft, rich rose sauce. This menu consists of the most flavorful and creamy sauce among the shrimp rosés I have ever tasted. It is so delicious that even people who are trying this menu for the first time can enjoy it. If you want to eat a menu with a healthier taste, I recommend grilled anchovies. This menu is a harmonious combination of the saltiness of whole ground anchovies and savory stir-fried eggplant zucchini. So, this is a menu where you can enjoy the savory taste and flavor of eggplant. It's a cool, easy-to-make menu for those who want to try eggplant dishes for the first time. I recommend this restaurant to those who want to dine with friends and lovers while chatting in a vintage atmosphere.</span>
+    </div>
+    <div class="result-item western-food-drinking-10000" style="display: none;">
+        <div class="white_machine"></div>
+        <span class="result">CINNAMON EFFECT</span>
+        <span class="info_location">▷ 2nd floor, 379 Bongcheon-ro, Gwanak-gu, Seoul</span>
+        <span class="info_time">▷ Everyday 17:00 - 03:00 | 02:00 last order | Closed every Monday</span>
+        <span class="info_number">▷ 010-8793-9795</span>
+        <div class="line_1"></div>
+        <span class="menu">Representative Menu</span>
+        <button class="location-button" onclick="window.location.href='https://naver.me/GKoVc6OV'">Location</button>
+        <span class="menu_1">▷ Various Types of Cocktails </span>
+        <span class="menu_2">▷ Cream Cheese Canapé </span>
+        <span class="menu_3">▷ Cheese Dipping Nachos  </span>
+        <span class="menu_4">▷ Banana Brûlée  </span>
+        <div class="line_2"></div>
+        <span class="review">Recommended Menu & Review</span>
+        <span class="review_content">This restaurant is mainly for drinking rather than eating. Therefore, since the menu consisted mainly of alcohol and cocktails, representative menu items were randomly selected and written down. First of all, the biggest advantage of this restaurant is that all menu items are really cheap. Usually bars are expensive, but at this restaurant, all menu items are very affordable. For example, the restaurant's menu of cinnamon ginger highballs is 6,500 won, and cheese dipping nachos are 10,000 won. In addition, I thought it was a really good restaurant in that there were a wide variety of snacks as standard snacks and you could bring your own. The atmosphere of the restaurant, the quality of the menu, and the visuals are all good. I recommend this restaurant to those who want to drink in a cozy atmosphere with friends and lovers, or to those who want to drink quietly alone.</span>
+    </div>
+    <div class="result-item western-food-drinking-15000" style="display: none;">
+        <div class="white_machine"></div>
+        <span class="result">FERMATA</span>
+        <span class="info_location">▷ Basement 1, 1899 Nambusunhwan-ro, Gwanak-gu, Seoul</span>
+        <span class="info_time">▷ Everyday 18:00 - 01:00 | 00:00 last order | Closed every Sunday</span>
+        <span class="info_number">▷ 070-7585-3894</span>
+        <div class="line_1"></div>
+        <span class="menu">Representative Menu</span>
+        <button class="location-button" onclick="window.location.href='https://naver.me/5hUt0Re5'">Location</button>
+        <span class="menu_1">▷ Boneless Chicken </span>
+        <span class="menu_2">▷ Fruit Cheese Pizza </span>
+        <span class="menu_3">▷ British Tropicana  </span>
+        <span class="menu_4">▷ german wurst  </span>
+        <div class="line_2"></div>
+        <span class="review">Recommended Menu & Review</span>
+        <span class="review_content">This restaurant is a pub where you can enjoy world beer, cocktails, and whiskey along with live performances. It is a restaurant where you can have a drink alone in a cozy atmosphere, watch a performance, or sing and play. The most unique and best thing about this restaurant is the live performance. In this performance, the owner of the restaurant participates by playing and singing, and the customers also sing along, creating an environment for drinking happily. . Additionally, it is basically a restaurant that creates a good atmosphere with delicious snacks and cold drinks. The menu at this restaurant feels a bit expensive, but I think it's a reasonable price considering you can enjoy drinks along with a live performance. At this restaurant, I would like to recommend the flavorful German Wurst topped with German sausage, grilled tomatoes, parsley, basil, Parmesan cheese, onion flakes, and jalapenos. German wurst is one of the most popular menu items in restaurants, ordered and tasted by the most people, and is a generous and high-quality dish. I recommend this restaurant to those who want to drink in a cozy atmosphere with friends and lovers, or to those who want to have fun alone.</span>
+    </div>
+    <div class="result-item korean-food-atmosphere-10000" style="display: none;">
+        <div class="white_machine"></div>
+        <span class="result">JEJU SANGHOE</span>
+        <span class="info_location">▷ Basement 1, 108 Gwanak-ro 12-gil, Gwanak-gu, Seoul</span>
+        <span class="info_time">▷ Everyday 11:30 - 21:00 | 20:30 last order | 14:30 - 17:00 Break time | Closed every Sunday</span>
+        <span class="info_number">▷ 02-883-7083</span>
+        <div class="line_1"></div>
+        <span class="menu">Representative Menu</span>
+        <button class="location-button" onclick="window.location.href='https://naver.me/G3JhaABi'">Location</button>
+        <span class="menu_1">▷ Meat Noodles- Normal </span>
+        <span class="menu_2">▷ Dombe Meat- Normal </span>
+        <span class="menu_3">▷ Mom Guk- Normal </span>
+        <span class="menu_4">▷ Meat Gukbab- Normal </span>
+        <div class="line_2"></div>
+        <span class="review">Recommended Menu & Review</span>
+        <span class="review_content">This restaurant specializes in making Jeju Island food using Jeju pigs. Because it is a restaurant that has been in business for a long time, it is trustworthy and loved by many people. The most popular menu item at this restaurant is meat noodles. Although the price does not exceed 10,000 won, the combination of generous amounts of meat and savory soup makes it a fantastic menu. Because it is very popular with people, you must be careful when visiting the restaurant as ingredients will run out quickly if you do not go early. This restaurant is recommended for those who want to enjoy rich and delicious traditional Jeju Island food, especially Korean food. This is a restaurant where you can have fun either alone or with friends or loved ones.</span>
+    </div>
+    <div class="result-item korean-food-atmosphere-15000" style="display: none;">
+        <div class="white_machine"></div>
+        <span class="result">GOBONG SIGDANG</span>
+        <span class="info_location">▷ 2nd floor, Hyorim Building, 70 Gwanak-ro 14-gil, Gwanak-gu, Seoul</span>
+        <span class="info_time">▷ Everyday 16:00 - 24:00 | 23:00 last order | Closed every Tuesday</span>
+        <span class="info_number">▷ 0507-1427-5356</span>
+        <div class="line_1"></div>
+        <span class="menu">Representative Menu</span>
+        <button class="location-button" onclick="window.location.href='https://naver.me/5girxGx4'">Location</button>
+        <span class="menu_1">▷ Steamed pork kimchi for 2 servings </span>
+        <span class="menu_2">▷ Steamed saury kimchi for 2 servings </span>
+        <span class="menu_3">▷ Beef Tripe Hotpot  </span>
+        <span class="menu_4">▷ Egg Roll  </span>
+        <div class="line_2"></div>
+        <span class="review">Recommended Menu & Review</span>
+        <span class="review_content">This restaurant is a great place to experience familiar Korean tastes and atmosphere. You can enjoy the familiar and nostalgic taste of eating at home through Korean food menus that remind you of the home-cooked meals your Korean mother made. The menu items I would most recommend at this restaurant are kimchi stew and tripe stew. Both menus are generous in quantity and deep in flavor, making them a filling meal. Moreover, unlike other Korean restaurants, the atmosphere of this restaurant is decorated with a hip interior that young people will like, making it a space that young people can also enjoy. At the same time, the strong composition and taste captivate even older people. I recommend this restaurant to those who want to have a hearty meal with friends, family, and lovers.</span>
+    </div>
+    <div class="result-item korean-food-drinking-10000" style="display: none;">
+        <div class="white_machine"></div>
+        <span class="result">YEOK JEON FNC</span>
+        <span class="info_location">▷ 18 Nambusunhwan-ro 230-gil, Gwanak-gu, Seoul</span>
+        <span class="info_time">▷ Everyday 16:00 - 05:00 </span>
+        <span class="info_number">▷ 02-877-1982</span>
+        <div class="line_1"></div>
+        <span class="menu">Representative Menu</span>
+        <button class="location-button" onclick="window.location.href='https://naver.me/xw69WfEb'">Location</button>
+        <span class="menu_1">▷ Homemade Sausage </span>
+        <span class="menu_2">▷ Yeomtong Gui </span>
+        <span class="menu_3">▷ Spam Grilled Eggs  </span>
+        <span class="menu_4">▷ Chapaguri  </span>
+        <div class="line_2"></div>
+        <span class="review">Recommended Menu & Review</span>
+        <span class="review_content">This restaurant may be the restaurant with the most franchise locations in Korea. Because of this, the prices are much cheaper than other bars. The representative menu was selected as an inexpensive menu considering the price aspect, but there are also various menus at various prices. This restaurant's menu changes a lot depending on trends, so if you want to try new and unique dishes, or if you want to enjoy drinks with a variety of foods, this restaurant is recommended. As the restaurant's menu is a brand with many branches, it has the characteristic of being delicious enough no matter where you go. Among the many menu items, many people prefer tteokbokki. Tteokbokki, which has a sweet and basic taste, goes well with any alcohol and is delicious. I recommend this restaurant to those who want to have a light drink with friends and lovers.</span>
+    </div>
+    <div class="result-item korean-food-drinking-15000" style="display: none;">
+        <div class="white_machine"></div>
+        <span class="result">DONGNEAJ</span>
+        <span class="info_location">▷ Basement 1, 77 Gwanak-ro 12-gil, Gwanak-gu, Seoul</span>
+        <span class="info_time">▷ Everyday 12:00 - 05:00</span>
+        <span class="info_number">▷ 010-4780-3741</span>
+        <div class="line_1"></div>
+        <span class="menu">Representative Menu</span>
+        <button class="location-button" onclick="window.location.href='https://naver.me/GJv2fH5N'">Location</button>
+        <span class="menu_1">▷ Joseon Kimchi Stew </span>
+        <span class="menu_2">▷ Odeng soup </span>
+        <span class="menu_3">▷ Seasoned Whelk  </span>
+        <span class="menu_4">▷ Bibim Noodles  </span>
+        <div class="line_2"></div>
+        <span class="review">Recommended Menu & Review</span>
+        <span class="review_content">This is a great restaurant to have a drink with Korean snacks. This restaurant basically has a noisy atmosphere, making it great for drinking with people and having fun while talking. The most recommended dish at this restaurant is the kimchi stew. This kimchi stew is rich in meat and the portion size is great for the price, so it's great for sharing with a lot of people. This menu is made by boiling a whole large pot and serving it to the table, so you can feel the raw atmosphere. Also, while the prices of snacks at most bars are very high, the prices of snacks at this restaurant are relatively reasonable compared to the amount of snacks, making it a restaurant that young people can easily visit. It is a restaurant where you can enjoy and enjoy the restaurant because both the owner and the staff treat customers kindly. I recommend this restaurant to people who want to have fun talking and drinking with friends and others.</span>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

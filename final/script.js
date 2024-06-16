@@ -53,3 +53,5 @@ document.getElementById('searchButton').addEventListener('click', function() {
         alert('Please select a valid combination before searching.');
     }
 });
+
+

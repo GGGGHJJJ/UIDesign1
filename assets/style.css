@@ -62,7 +62,7 @@ img {
 .darkmode {
     position: absolute;
     top: 27px;
-    left: 270px;
+    left: 300px;
     padding: 4px 8px;
     font-size: 22px;
     border-radius: 100%;
@@ -74,12 +74,18 @@ img {
 
 /*	DARK MODE STYLES GO HERE */
 
-body.darkmode {
+body.dark {
 	background: darkblue;
 	
 
-body.darkmode {
+.body.darkmode {
 	color: white;
+}
+
+@media only screen and (max-width: 812px) { 
+    body {
+        background: hotpink;
+    }
 }
 
 /* uncomment the code below to set the grid */
