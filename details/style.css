@@ -1,0 +1,46 @@
+body {
+    background-color: lightskyblue;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: white;
+}
+
+.star-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* 별 버튼들 사이의 간격 */
+}
+
+.star {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    color: darkblue;
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+    border: 0px solid black;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 마우스를 가져다 대었을 때의 스타일 */
+    transition: background-color 0.3s ease;
+}
+
+.star:hover {
+    background-color: yellow;
+}

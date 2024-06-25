@@ -92,4 +92,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
         requestAnimationFrame(animation);
     }
+    // 공유 버튼 클릭 이벤트 처리
+    document.querySelectorAll('.shareButton').forEach(function(button) {
+        button.addEventListener('click', function() {
+            const url = new URL(window.location.href);
+
+            // 선택된 옵션을 URL 파라미터에 추가
+            const params = new URLSearchParams();
+            document.querySelectorAll('.ball_westernfood, .ball_koreanfood, .ball_atmosphere, .ball_drinking, .ball_10000, .ball_15000').forEach(function(ball) {
+                if (ball.classList.contains('clicked')) {
+                    params.append(ball.id, 'true');
+                }
+            });
+
+            // go 버튼이 눌린 상태를 URL 파라미터에 추가
+            params.append('searchClicked', 'true');
+
+            // 새 URL 생성
+            const newUrl = `${url.origin}${url.pathname}?${params.toString()}`;
+
+            navigator.clipboard.writeText(newUrl).then(() => {
+                alert('링크가 클립보드에 복사되었습니다.');
+            }).catch((error) => {
+                console.log('링크 복사 실패', error);
+            });
+        });
+    });
+
+    // 페이지 로드 시 URL 파라미터에 따라 선택된 옵션을 설정
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.forEach((value, key) => {
+        const ball = document.getElementById(key);
+        if (ball && value === 'true') {
+            ball.classList.add('clicked');
+        }
+    });
+
+    // 페이지 로드 시 'go' 버튼이 눌린 상태를 확인하고 결과를 보여줌
+    if (urlParams.get('searchClicked') === 'true') {
+        showResults();
+
+        // 페이지 최하단까지 부드럽게 스크롤
+        smoothScrollTo(document.body.scrollHeight, 2000); // 2초 동안 스크롤
+    }
 });

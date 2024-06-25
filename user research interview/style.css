@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+    margin:60px;
+}
+
+.cursive {
+    font-family: "Oswald", sans-serif;
+    color: black;
+    font-size:  40px;
+    font-weight: bold;
+}
+
+.title {
+    font-family: "Oswald", sans-serif;
+    color: black;
+    font-size:  30px;
+    font-weight: bold;
+}
+
+.content {
+    font-family: "Oswald", sans-serif;
+    color: black;
+    width: 1000px;
+    font-size:  20px;
+    font-weight: normal;
+}
