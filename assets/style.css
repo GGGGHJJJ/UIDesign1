@@ -72,6 +72,25 @@
     background-color: yellow;
 }
 
+.diary {
+    position: absolute;
+    top: 20px;
+    left: 530px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    color: darkblue;
+    background: white;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    /* 마우스를 가져다 대었을 때의 스타일 */
+    transition: background-color 0.3s ease;
+}
+
+.diary:hover {
+    background-color: yellow;
+}
+
 .text-section {
     padding: 20px;
     margin-top: 50px;
